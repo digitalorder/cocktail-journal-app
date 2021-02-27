@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1001,
+        "name": "Negroni",
+        "description": "Classic italian aperetif",
+        "glassware": "Old Fashioned",
+        "ingredients": "• 1 Oz Gin\n• 1 Oz Campari\n• 1 Oz Red Sweet Vermouth\n• 1 Dash Ingredient with rediculously long name that doesn't fit one line",
+        "instructions": "Add all ingredients into mixing glass and stir well. Strain into old fashioned glass with ice and add orange slice as a garnish."
+    },
+    {
+        "id": 1002,
+        "name": "White Russian",
+        "description": "Where is the money, Lebowski??",
+        "glassware": "Old Fashioned",
+        "ingredients": "• 1 Oz Vodka\n• 1 Oz Kahlúa\n• 1 Oz Half-and-half cream",
+        "instructions": "Add vodka and Kahlúa into final glass and stir well. Float cream on top."
+    }
+]
