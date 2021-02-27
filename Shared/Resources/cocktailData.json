@@ -26,7 +26,8 @@
                 "unit": "Dash"
             }
         ],
-        "instructions": "Add all ingredients into mixing glass and stir well. Strain into old fashioned glass with ice and add orange slice as a garnish."
+        "instructions": "Add all ingredients into mixing glass and stir well. Strain into old fashioned glass with ice and add orange slice as a garnish.",
+        "isFavorite": false
     },
     {
         "id": 1002,
@@ -50,6 +51,7 @@
                 "unit": "Oz"
             }
         ],
-        "instructions": "Add vodka and Kahlúa into final glass and stir well. Float cream on top."
+        "instructions": "Add vodka and Kahlúa into final glass and stir well. Float cream on top.",
+        "isFavorite": true
     }
 ]

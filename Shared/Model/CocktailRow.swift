@@ -17,11 +17,16 @@ struct CocktailRow: View {
                 Text(cocktail.description).font(.subheadline).foregroundColor(.secondary)
             }
             Spacer()
+            if cocktail.isFavorite {
+                Image(systemName: "heart.fill").foregroundColor(.red)
+            }
         }
     }
 }
 
 struct CocktailRow_Previews: PreviewProvider {
+    static var cocktails = ModelData().cocktails
+
     static var previews: some View {
         Group {
             CocktailRow(cocktail: cocktails[0])

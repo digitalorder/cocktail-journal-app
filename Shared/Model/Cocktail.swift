@@ -20,4 +20,5 @@ struct Cocktail: Hashable, Codable, Identifiable {
     var glassware: String
     var ingredients: [Ingredient]
     var instructions: String
+    var isFavorite: Bool
 }

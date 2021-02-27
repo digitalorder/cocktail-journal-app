@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct CocktailDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var cocktail: Cocktail
-    
+
+    var cocktailIndex: Int {
+        modelData.cocktails.firstIndex(where: { $0.id == cocktail.id })!
+    }
+
     var body: some View {
         ScrollView {
             VStack(alignment:.leading) {
@@ -23,6 +28,7 @@ struct CocktailDetail: View {
                             .foregroundColor(.secondary)
                     }
                     Spacer()
+                    FavoriteButton(isSet: $modelData.cocktails[cocktailIndex].isFavorite)
                 }
                 Divider()
                 HStack {
@@ -50,7 +56,10 @@ struct CocktailDetail: View {
 }
 
 struct CocktailDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+
     static var previews: some View {
-        CocktailDetail(cocktail: cocktails[1])
+        CocktailDetail(cocktail: ModelData().cocktails[1])
+            .environmentObject(modelData)
     }
 }
