@@ -33,7 +33,9 @@ struct CocktailDetail: View {
                 }
                 Text("Ingredients").font(.title2)
                 VStack(alignment: .leading) {
-                    Text(cocktail.ingredients)
+                    ForEach(cocktail.ingredients, id: \.self) { ingredient in
+                        Text("• \(ingredient.value) \(ingredient.unit) \(ingredient.name)")
+                    }
                 }
                 .padding([.top, .leading, .bottom])
                 Text("Instructions").font(.title2)
