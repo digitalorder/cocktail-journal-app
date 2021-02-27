@@ -44,7 +44,8 @@ struct CocktailDetail: View {
             }
             .padding()
         }
-        .navigationTitle(cocktail.name)
+        .navigationTitle("")
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
