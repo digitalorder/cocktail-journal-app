@@ -27,7 +27,7 @@
             }
         ],
         "instructions": "Add all ingredients into mixing glass and stir well. Strain into old fashioned glass with ice and add orange slice as a garnish.",
-        "isFavorite": false
+        "score": 2
     },
     {
         "id": 1002,
@@ -52,6 +52,36 @@
             }
         ],
         "instructions": "Add vodka and Kahlúa into final glass and stir well. Float cream on top.",
-        "isFavorite": true
+        "score": 3
+    },
+    {
+        "id": 1003,
+        "name": "Last word",
+        "description": "",
+        "glassware": "Cocktail",
+        "ingredients": [
+            {
+                "name": "Gin",
+                "value": "¾",
+                "unit": "Oz"
+            },
+            {
+                "name": "Green Chartreuse",
+                "value": "¾",
+                "unit": "Oz"
+            },
+            {
+                "name": "Maraschino",
+                "value": "¾",
+                "unit": "Oz"
+            },
+            {
+                "name": "Lime Juice",
+                "value": "¾",
+                "unit": "Oz"
+            }
+        ],
+        "instructions": "Shake well and strain into cocktail glass.",
+        "score": 0
     }
 ]

@@ -13,7 +13,7 @@ struct CocktailList: View {
 
     var filteredCocktails: [Cocktail] {
         modelData.cocktails.filter { cocktail in
-            (!showFavoritesOnly || cocktail.isFavorite)
+            (!showFavoritesOnly || cocktail.score > 2)
         }
     }
 
@@ -21,7 +21,7 @@ struct CocktailList: View {
         NavigationView {
             List {
                 Toggle(isOn: $showFavoritesOnly) {
-                    Text("Favorites only")
+                    Text("3-star only")
                 }
 
                 ForEach(filteredCocktails) { cocktail in

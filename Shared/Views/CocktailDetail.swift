@@ -28,7 +28,7 @@ struct CocktailDetail: View {
                             .foregroundColor(.secondary)
                     }
                     Spacer()
-                    FavoriteButton(isSet: $modelData.cocktails[cocktailIndex].isFavorite)
+                    ScoreButton(score: $modelData.cocktails[cocktailIndex].score)
                 }
                 Divider()
                 HStack {
@@ -59,7 +59,7 @@ struct CocktailDetail_Previews: PreviewProvider {
     static let modelData = ModelData()
 
     static var previews: some View {
-        CocktailDetail(cocktail: ModelData().cocktails[1])
+        CocktailDetail(cocktail: ModelData().cocktails[2])
             .environmentObject(modelData)
     }
 }

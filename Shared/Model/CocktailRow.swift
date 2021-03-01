@@ -14,12 +14,12 @@ struct CocktailRow: View {
         HStack {
             VStack(alignment: .leading) {
                 Text(cocktail.name)
-                Text(cocktail.description).font(.subheadline).foregroundColor(.secondary)
+                if !cocktail.description.isEmpty {
+                    Text(cocktail.description).font(.subheadline).foregroundColor(.secondary)
+                }
             }
             Spacer()
-            if cocktail.isFavorite {
-                Image(systemName: "heart.fill").foregroundColor(.red)
-            }
+            ScoreView(score: cocktail.score)
         }
     }
 }
@@ -31,6 +31,7 @@ struct CocktailRow_Previews: PreviewProvider {
         Group {
             CocktailRow(cocktail: cocktails[0])
             CocktailRow(cocktail: cocktails[1])
+            CocktailRow(cocktail: cocktails[2])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }
